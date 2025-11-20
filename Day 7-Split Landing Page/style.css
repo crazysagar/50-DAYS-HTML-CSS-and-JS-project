@@ -24,7 +24,7 @@ h1 {
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
-    white-space: nowrap;
+    white-space: no-wrap;
 }
 
 .btn {
@@ -68,7 +68,7 @@ h1 {
 
 .split.left {
     left: 0;
-    background: url();
+    background: url(https://bikepricenepal.com/assets/img/product/product-67481a8441fa2f77web.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -82,7 +82,7 @@ h1 {
 
 .split.right {
     right: 0;
-    background: url();
+    background: url(https://cdn.bikedekho.com/processedimages/kawasaki/kawasaki-ninja-zx-10r/source/kawasaki-ninja-zx-10r68e8e427b3819.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
