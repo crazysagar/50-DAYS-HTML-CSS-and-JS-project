@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <link rel="stylesheet" href="style.css">
-    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Movie App</title>
 </head>
 <body>
-    <h1>Project Starter</h1>
+    <header>
+        <form id="form">
+            <input type="text" class="search" id="search" placeholder="Search">
+        </form>
+    </header>
+
+    <!-- ✅ Only ONE main container -->
+    <main id="main">
+
+        <div class="movie">
+            <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlNl9yb3dzX29mX2VtcHR5X3JlZF9zZWF0c19pbl9jaW5lbWFfNDI1OTNhNDctMDNiZC00YjA5LWJjOWUtY2M2ZmVmNjZhN2JmXzEuanBn.jpg" alt="">
+            
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="green">9.8</span>
+            </div>
+
+            <div class="overview">
+                <h3>Overview</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officia 
+                quos quam quia optio dolore consequatur, magnam corporis voluptatem in.
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlNl9yb3dzX29mX2VtcHR5X3JlZF9zZWF0c19pbl9jaW5lbWFfNDI1OTNhNDctMDNiZC00YjA5LWJjOWUtY2M2ZmVmNjZhN2JmXzEuanBn.jpg" alt="">
+            
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="orange">2.9</span>
+            </div>
+
+            <div class="overview">
+                <h3>Overview</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officia 
+                quos quam quia optio dolore consequatur, magnam corporis voluptatem in.
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlNl9yb3dzX29mX2VtcHR5X3JlZF9zZWF0c19pbl9jaW5lbWFfNDI1OTNhNDctMDNiZC00YjA5LWJjOWUtY2M2ZmVmNjZhN2JmXzEuanBn.jpg" alt="">
+            
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="red">7.9</span>
+            </div>
+
+            <div class="overview">
+                <h3>Overview</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officia 
+                quos quam quia optio dolore consequatur, magnam corporis voluptatem in.
+            </div>
+        </div>
+
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
