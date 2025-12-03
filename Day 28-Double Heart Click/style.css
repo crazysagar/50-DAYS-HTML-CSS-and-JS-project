@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.loveMe {
+    height: 540px;
+    width: 300px;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRStv2Czt_e6oldHnkjmvNQNKERTnlez06zEg&s') no-repeat center center/cover;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+}
+
+.loveMe .fa-heart {
+    position: absolute;
+    animation: grow 0.6s linear forwards;
+    transform: translate(-50%, -50%) scale(0);
+    color: red;
+}
+
+@keyframes grow {
+    to {
+        transform: translate(-50%, -50%) scale(10);
+        opacity: 0;
+    }
+}
