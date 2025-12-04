@@ -1,8 +1,8 @@
 const APIURL = 'https://api.github.com/users/';
 
-const main = document.getElementById('main')
-const form = document.getElementById('form')
-const search = document.getElementById('search')
+const main = document.getElementById('main');
+const form = document.getElementById('form');
+const search = document.getElementById('search');
 
 async function getUser(username) {
     try {
@@ -12,11 +12,24 @@ async function getUser(username) {
     } catch(err) {
         if(err.response.status == 404) {
             createErrorCard('No User Found')
-        }
+        };
         
-    }
+    };
 
 };
+
+
+async function getRepos(username) {
+    try {
+        const { data } = await axios(APIURL + username + '/repos?sort=created')
+    
+        addReposToCard(data)
+    } catch(err) {
+            createErrorCard('Problem fetching repos')
+    };
+
+};
+ 
 
 function creatUserCard(user) {
     const cardHTML = `
@@ -39,7 +52,23 @@ function creatUserCard(user) {
     `
     main.innerHTML = cardHTML
 
-}
+};
+
+function addReposToCard(repos) {
+    const reposEl = document.getElementById('repos')
+
+repos
+    .forEach(repo => {
+        const repoEl = document.createElement('a')
+        repoEl.classList.add('repo')
+        repoEl.href = repo.html_url
+        repoEl.target = '_blank'
+        repoEl.innerText = repo.name
+
+        reposEl.appendChild(repoEl)
+    });
+
+};
 
 function createErrorCard(msg) {
     const cardHTML = `
@@ -49,7 +78,7 @@ function createErrorCard(msg) {
     `
     main.innerHTML = cardHTML
 
-}
+};
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
