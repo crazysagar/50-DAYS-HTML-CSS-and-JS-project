@@ -33,6 +33,7 @@ body {
 .ratings-container {
     display: flex;
     margin: 20px 0;
+    align-items: center;
 }
 
 .rating {
@@ -40,6 +41,10 @@ body {
     cursor: pointer;
     padding: 20px;
     margin: 10px 5px;
+    display: flex;            
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .rating:hover,
